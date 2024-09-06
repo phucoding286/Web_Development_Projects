@@ -1,0 +1,94 @@
+/* samsung s8 screen */
+
+@media only screen and (max-device-width: 430px) and (max-device-width: 932px) {
+
+    .features {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @keyframes in-to-out {
+        from {
+            transform: translateX(-100%)
+        }
+
+        to {
+            transform: translateX(0%)
+        }
+    }
+
+    .options-left {
+        position: fixed;
+        background-color: rgb(65, 65, 65);
+        padding-left: 20%;
+        padding-bottom: 100%;
+        width: 50%;
+        padding-top: 5%;
+        margin-left: -1%;
+        z-index: 999;
+        display: none;
+    }
+
+    .img-character {
+        position: relative;
+        width: 60%;
+        height: 60%;
+        right: 8%;
+        border-radius: 20px 20px;
+        box-shadow: 2px 2px 2px 2px rgb(241, 116, 255);
+        margin-top: 10%;
+    }
+
+    .img-character:hover {
+        box-shadow: 3px 3px 3px 3px rgb(143, 65, 151);
+        cursor: pointer;
+    }
+
+    .descript-character {
+        position: relative;
+        right: 20%;
+        width: 90%;
+        color: white;
+        animation: typing-des 10s steps(40, end);
+        font-size: 270%;
+        margin-top: 20%;
+    }
+
+    .descript-character:hover {
+        color: rgb(242, 121, 255);
+        cursor: pointer;
+    }
+
+    .send-msg {
+        position: fixed;
+        top: 90%;
+        left: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        background-color: rgb(74, 74, 74);
+        padding-bottom: 20%;
+        padding-right: 15%;
+    }
+
+    .text-input {
+        padding: 40px 40px;
+        width: 200%;
+        border-radius: 40px 40px;
+        background-color: rgb(59, 59, 59);
+        color: white;
+        font-size: 300%;
+    }
+
+    .send-button {
+        position: relative;
+        left: 5%;
+        border-radius: 40px 40px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 300%
+
+    }
+
+}

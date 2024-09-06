@@ -1,0 +1,40 @@
+/* PC screen */
+
+
+.conversations {
+    position: relative;
+    left: 50%;
+    margin-top: 5%;
+    width: 19%;
+    margin-bottom: 10%;
+}
+
+.list-content {
+    position: relative;
+    list-style-type: none;
+}
+
+.bot-content {
+    position: relative;
+    color: white;
+    padding: 15px 15px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 15px 15px;
+    float: inline-start;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    font-style: inherit;
+}
+
+.user-content {
+    position: relative;
+    color: white;
+    padding: 15px 15px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 15px 15px;
+    float: inline-end;
+    word-wrap: break-word;
+    white-space: normal;
+    font-style: inherit;
+}

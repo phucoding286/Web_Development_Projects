@@ -1,0 +1,35 @@
+/* samsung s8 screen */
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) {
+
+    .mobile-char-appeer-select {
+        z-index: 1000;
+        position: relative;
+        top: 20%;
+    }
+
+    .mobile-select-appeer-text {
+        position: relative;
+        color: white;
+        padding: 5px 5px;
+        background-color: rgb(59, 59, 59);
+        font-size: 100%;
+        right: 50%;
+        z-index: 1000;
+        top: 8%;
+        width: 100%;
+        font-style: normal;
+        cursor: pointer;
+        display: inline;
+    }
+
+    .mobile-select-close {
+        position: relative;
+        color: white;
+        font-size: 250%;
+        margin-top: -5%;
+        margin-left: 80%;
+        font-style: inherit;
+        display: inline;
+    }
+}

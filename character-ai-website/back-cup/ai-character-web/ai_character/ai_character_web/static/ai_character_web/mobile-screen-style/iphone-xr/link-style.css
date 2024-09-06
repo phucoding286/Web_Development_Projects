@@ -1,0 +1,55 @@
+/* samsung s8 screen */
+
+@media only screen and (max-device-width: 414px) and (max-device-width: 896px) {
+
+    @keyframes opacity {
+        from {
+            opacity: 0%
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    .github-link {
+        position: relative;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        animation: opacity 3s;
+        font-size: 75%;
+        display: none;
+    }
+
+    .facebook-link {
+        position: relative;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        animation: opacity 3s;
+        font-size: 75%;
+        display: none;
+    }
+
+    .tutorial-link {
+        position: relative;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        animation: opacity 3s;
+        font-size: 75%;
+        display: none;
+    }
+
+    .youtube-link {
+        position: relative;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        animation: opacity 3s;
+        font-size: 75%;
+        margin-right: 5%;
+    }
+
+}

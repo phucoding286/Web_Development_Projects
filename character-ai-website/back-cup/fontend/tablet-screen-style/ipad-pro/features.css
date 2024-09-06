@@ -1,0 +1,98 @@
+/* Ipad Pro screen */
+
+@media only screen and (max-device-width: 1024px) and (max-device-width: 1366px) {
+
+    .features {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @keyframes in-to-out {
+        from {
+            transform: translateX(-100%)
+        }
+
+        to {
+            transform: translateX(0%)
+        }
+    }
+
+    .options-left {
+        position: fixed;
+        background-color: rgb(65, 65, 65);
+        padding-left: 20%;
+        padding-bottom: 100%;
+        width: 5%;
+        padding-top: 5%;
+        margin-left: -1%;
+        animation: in-to-out 0.5s forwards;
+    }
+
+    .img-character {
+        position: relative;
+        width: 300%;
+        height: 270%;
+        right: 300%;
+        margin-top: 70%;
+        border-radius: 20px 20px;
+        box-shadow: 2px 2px 2px 2px rgb(241, 116, 255);
+        /* thêm vào */
+        margin-top: 200%;
+    }
+
+    .img-character:hover {
+        box-shadow: 3px 3px 3px 3px rgb(143, 65, 151);
+        cursor: pointer;
+    }
+
+    .descript-character {
+        position: relative;
+        right: 320%;
+        width: 310%;
+        margin-top: 50%;
+        color: white;
+        animation: typing-des 10s steps(40, end);
+        font-size: 70%;
+        /* thêm vào */
+        margin-top: 200%;
+    }
+
+    .descript-character:hover {
+        color: rgb(242, 121, 255);
+        cursor: pointer;
+    }
+
+    .send-msg {
+        position: fixed;
+        top: 93%;
+        left: -4%;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        background-color: rgb(59, 59, 59);
+        padding-bottom: 10%;
+        padding-right: 30%;
+        padding-left: 30%;
+        padding-top: 2%;
+        z-index: 201;
+        height: 4%;
+    }
+
+    .text-input {
+        padding: 15px 15px;
+        width: 100%;
+        border-radius: 15px 15px;
+        background-color: rgb(70, 70, 70);
+        color: white;
+    }
+
+    .send-button {
+        position: relative;
+        left: 2%;
+        border-radius: 15px 15px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+}

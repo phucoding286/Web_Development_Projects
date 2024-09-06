@@ -1,0 +1,23 @@
+.select-character-list-div {
+    position: relative;
+    left: -95%;
+    overflow: auto;
+    float: inline-end;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 330%;
+}
+
+.select-character-list-ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.img-char-select {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px;
+    cursor: pointer;
+}

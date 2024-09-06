@@ -1,0 +1,35 @@
+/* Ipad air screen */
+
+@media only screen and (max-device-width: 820px) and (max-device-width: 1180px) {
+
+    .conversations {
+        position: relative;
+        left: 44.5%;
+        margin-top: 8%;
+        width: 35%;
+        margin-bottom: 10%;
+    }
+
+    .list-content {
+        position: relative;
+        list-style-type: none;
+    }
+
+    .bot-content {
+        position: relative;
+        color: white;
+        padding: 15px 15px;
+        background-color: rgb(88, 88, 88);
+        border-radius: 15px 15px;
+        float: inline-start;
+    }
+
+    .user-content {
+        position: relative;
+        color: white;
+        padding: 15px 15px;
+        background-color: rgb(88, 88, 88);
+        border-radius: 15px 15px;
+        float: inline-end;
+    }
+}

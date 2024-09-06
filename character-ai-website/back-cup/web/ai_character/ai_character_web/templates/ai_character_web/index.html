@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot create by Phu Tech</title>
+    <style>
+        html {
+            background-color: rgb(43, 43, 43);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title" id="title"></h1>
+    <style>
+        .title {
+            color: rgb(237, 237, 237);
+            width: 80%;
+            font-size: 120%;
+            text-align: center;
+            position: relative;
+            margin-top: 10%;
+            left: 10%;
+            font-style: inherit;
+            letter-spacing: 1px;
+            line-height: 150%;
+        }
+
+        @media only screen and (max-device-width: 360px) and (max-device-height: 740px) {
+            .title {
+                color: rgb(237, 237, 237);
+                width: 80%;
+                font-size: 100%;
+                text-align: center;
+                position: relative;
+                margin-top: 25%;
+                left: 10%;
+                font-style: inherit;
+                letter-spacing: 1px;
+                line-height: 150%;
+            }
+        }
+    </style>
+    <script>
+        const titleText = "Chào mừng bạn đến với dịch vụ ChatBot của Tôi Tôi tên là Phú, Tôi là người tạo ra trang web này Để quảng bá cho Cá nhân tôi và muốn thử sức tạo 1 Giao diện chatbot. Cảm ơn bạn đã ghé qua. Chúng ta Hãy bắt đầu chat với các nhân vật bên dưới nào! Bạn sẽ chọn nhân vật nào để bắt đầu cuộc trò chuyện?";
+        let indexTitleText = 0;
+        function typingTitle() {
+            document.getElementById("title").textContent += titleText[indexTitleText];
+            indexTitleText++;
+            if (document.getElementById("title").innerText.length < titleText.length) {
+                setTimeout(typingTitle, 10);
+            }
+        }
+        typingTitle();
+    </script>
+    <div class="select-character-list-div" id="select-character-list-div">
+        <p class=""></p>
+        <ul class="select-character-list-ul" id="select-character-list-ul">
+            <li>
+                <img class="img-char-select" id="img-char-select-keqing"
+                    src="https://i.pinimg.com/736x/af/31/12/af31128aa970df7101514aef463d54b5.jpg">
+            </li>
+            <li>
+                <img class="img-char-select" id="img-char-select-ganyu"
+                    src="https://i.pinimg.com/736x/82/40/98/8240981ed259cebd705a3a0c4cabd1c6.jpg">
+            </li>
+            <li>
+                <img class="img-char-select" id="img-char-select-ei"
+                    src="https://i.pinimg.com/564x/19/2b/ad/192bad665dc090b7e5b3005c4cbaff7e.jpg">
+            </li>
+            <li>
+                <img class="img-char-select" id="img-char-select-yae"
+                    src="https://i.pinimg.com/564x/f3/13/7f/f3137f027af24022b9e4a0ea3abfbad6.jpg">
+            </li>
+            <li>
+                <img class="img-char-select" id="img-char-select-hutao"
+                    src="https://i.pinimg.com/736x/08/d7/9b/08d79b7b4055ff71c2c7352e91d31d45.jpg">
+            </li>
+        </ul>
+    </div>
+    <style>
+        @keyframes opacityAnimation {
+            from { opacity: 0% }
+            to { opacity: 100% }
+        }
+        .select-character-list-div {
+            position: relative;
+            left: -30%;
+            overflow: auto;
+            float: inline-end;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            width: 40%;
+            margin-top: 10%;
+            animation: opacityAnimation 4s;
+        }
+
+        .select-character-list-ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+        }
+
+        .img-char-select {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border-radius: 50px 50px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        document.getElementById("img-char-select-ganyu").onclick = function () {
+            window.location.href = "/to_page/?page_name=ganyu";
+        }
+        document.getElementById("img-char-select-keqing").onclick = function () {
+            window.location.href = "/to_page/?page_name=keqing";
+        }
+        document.getElementById("img-char-select-ei").onclick = function () {
+            window.location.href = "/to_page/?page_name=ei";
+        }
+        document.getElementById("img-char-select-yae").onclick = function () {
+            window.location.href = "/to_page/?page_name=yae";
+        }
+        document.getElementById("img-char-select-hutao").onclick = function () {
+            window.location.href = "/to_page/?page_name=hutao";
+        }
+    </script>
+</body>
+
+</html>

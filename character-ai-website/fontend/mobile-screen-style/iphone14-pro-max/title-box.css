@@ -1,0 +1,48 @@
+/* samsung s8 screen */
+
+@media only screen and (max-device-width: 430px) and (max-device-width: 932px) {
+
+    html {
+        background-color: rgb(74, 74, 74);
+    }
+
+    .title-box {
+        position: fixed;
+        background-color: none;
+        padding: 5% 5%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(59, 59, 59);
+        z-index: 999;
+        font-size: 320%;
+    }
+
+    @keyframes opacity {
+        from {
+            opacity: 0%
+        }
+
+        to {
+            opacity: 100%
+        }
+    }
+
+    .title {
+        position: relative;
+        text-align: center;
+        color: white;
+        margin-top: 2%;
+        animation: opacity 3s;
+        padding: 5px 5px;
+        font-size: 100%;
+        margin-left: 22%;
+    }
+
+    .title:hover {
+        box-shadow: 1px 1px 1px 1px white;
+        background-color: rgb(137, 137, 137);
+        cursor: pointer;
+    }
+
+}

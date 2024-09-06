@@ -1,0 +1,35 @@
+/* Ipad Pro screen */
+
+@media only screen and (max-device-width: 768px) and (max-device-width: 1024px)  {
+
+    .mobile-char-appeer-select {
+        z-index: 1000;
+        position: relative;
+        top: 20%;
+        display: none;
+    }
+
+    .mobile-select-appeer-text {
+        position: relative;
+        color: white;
+        padding: 5px 5px;
+        background-color: rgb(59, 59, 59);
+        font-size: 100%;
+        right: 50%;
+        z-index: 1000;
+        top: 8%;
+        width: 100%;
+        font-style: inherit;
+        display: none;
+    }
+
+    .mobile-select-close {
+        position: relative;
+        color: white;
+        font-size: 250%;
+        margin-top: -5%;
+        margin-left: 70%;
+        font-style: inherit;
+        display: none;
+    }
+}

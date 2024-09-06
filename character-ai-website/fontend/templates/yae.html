@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat With Yae Miko</title>
+
+    <link rel="stylesheet" href="../pc-screen-style/title-box.css">
+    <link rel="stylesheet" href="../pc-screen-style/link-style.css">
+    <link rel="stylesheet" href="../pc-screen-style/features.css">
+    <link rel="stylesheet" href="../pc-screen-style/chating.css">
+    <link rel="stylesheet" href="../pc-screen-style/char-select.css">
+    <link rel="stylesheet" href="../pc-screen-style/mobile-select.css">
+    <!-- ipad pro -->
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/title-box.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/link-style.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/features.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/chating.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/char-select.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-pro/mobile-select.css">
+    <!-- ipad air -->
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/title-box.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/link-style.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/features.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/chating.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/char-select.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-air/mobile-select.css">
+    <!-- ipad mini -->
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/title-box.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/link-style.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/features.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/chating.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/char-select.css">
+    <link rel="stylesheet" href="../tablet-screen-style/ipad-mini/mobile-select.css">
+    <!-- samsung s8 -->
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/title-box.css">
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/link-style.css">
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/features.css">
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/chating.css">
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/char-select.css">
+    <link rel="stylesheet" href="../mobile-screen-style/samsung-s8/mobile-select.css">
+    <!-- iphone se -->
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/title-box.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/link-style.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/features.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/chating.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/char-select.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-se/mobile-select.css">
+    <!-- iphone xr -->
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/title-box.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/link-style.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/features.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/chating.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/char-select.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone-xr/mobile-select.css">
+    <!-- iphone 14 pro max -->
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/title-box.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/link-style.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/features.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/chating.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/char-select.css">
+    <link rel="stylesheet" href="../mobile-screen-style/iphone14-pro-max/mobile-select.css">
+    <!-- galazy z fold 5 -->
+    <!-- <link rel="stylesheet" href="../mobile-screen-style/galaxy-z-fold-5/features.css"> -->
+</head>
+
+<body>
+    <div class="background" id="background">
+        <div class="title-box" id="title-box">
+            <div class="mobile-select-appeer" id="mobile-select-appeer">
+                <img class="mobile-select-appeer-text" id="mobile-select-appeer-text"
+                src="https://i.pinimg.com/564x/f3/13/7f/f3137f027af24022b9e4a0ea3abfbad6.jpg">
+            </div>
+
+            <h2 class="title" id="title"></h2>
+
+            <script>
+                let index2 = 0;
+                const text2 = "ChatBot by PhuTech";
+                function appeeringText2() {
+                    document.getElementById('title').textContent += text2[index2];
+                    index2++;
+                    if (index2 < text2.length) {
+                        setTimeout(appeeringText2, 100);
+                    }
+                }
+                appeeringText2();
+            </script>
+
+            <script>
+                function toYoutubePage() {
+                    window.location.href = "https://www.youtube.com/@phucoding286";
+                }
+                document.getElementById("title").onclick = function () {
+                    toYoutubePage();
+                }
+            </script>
+
+            <a class="github-link" id="github-link" href="https://github.com/phucoding286">Trang Github Của Tôi</a>
+            <a class="facebook-link" id="facebook-link"
+                href="https://www.facebook.com/profile.php?id=61562099241369">Trang Facebook Của tôi</a>
+            <a class="tutorial-link" id="tutorial-link"
+                href="https://www.youtube.com/playlist?list=PLVmMCcyM465aYrME5E_FYDMnu3UoDjbGa">Hướng dẫn học Lập
+                Trình</a>
+            <a class="youtube-link" id="youtube-link" href="https://www.youtube.com/@phucoding286">Kênh Youtube Của
+                tôi</a>
+        </div>
+
+        <div class="features" id="features">
+            <div class="options-left" id="options-left">
+                <p class="mobile-select-close" id="mobile-select-close">X</p>
+
+                <img class="img-character" id="img-character"
+                    src="https://i.pinimg.com/564x/f3/13/7f/f3137f027af24022b9e4a0ea3abfbad6.jpg">
+
+                <script>
+                    function charDetails() {
+                        window.location.href = "https://genshin-impact.fandom.com/wiki/Yae_Miko";
+                    }
+                    document.getElementById("img-character").onclick = function () {
+                        charDetails();
+                    }
+                </script>
+
+                <a href="https://genshin-impact.fandom.com/wiki/Yae_Miko">
+                    <p class="descript-character" id="descript-character"></p>
+                </a>
+
+                <script>
+                    let index1 = 0;
+                    const text1 = "Yae Miko[Note 1] (tiếng Nhật: 八や重え神み子こ Yae Miko), còn được gọi là Guuji Yae (tiếng Nhật: 宮ぐう司じ Guuji) hoặc Guuji, là một nhân vật Electro có thể chơi được trong Genshin Impact. Là một Kitsune có nhiều khía cạnh, Yae Miko giám sát Đại đền Narukami, sở hữu Nhà xuất bản Yae, đồng thời là người hầu và bạn của Eternity.";
+                    function appeeringText1() {
+                        document.getElementById('descript-character').textContent += text1[index1];
+                        index1++;
+                        if (index1 < text1.length) {
+                            setTimeout(appeeringText1, 10);
+                        }
+                    }
+                    appeeringText1();
+                </script>
+
+                <div class="select-character-list-div" id="select-character-list-div">
+                    <ul class="select-character-list-ul" id="select-character-list-ul">
+                        <li>
+                            <img class="img-char-select" id="img-char-select-keqing"
+                                src="https://i.pinimg.com/736x/af/31/12/af31128aa970df7101514aef463d54b5.jpg">
+                        </li>
+                        <li>
+                            <img class="img-char-select" id="img-char-select-ganyu"
+                                src="https://i.pinimg.com/736x/82/40/98/8240981ed259cebd705a3a0c4cabd1c6.jpg">
+                        </li>
+                        <li>
+                            <img class="img-char-select" id="img-char-select-ei"
+                                src="https://i.pinimg.com/564x/19/2b/ad/192bad665dc090b7e5b3005c4cbaff7e.jpg">
+                        </li>
+                        <li>
+                            <img class="img-char-select" id="img-char-select-yae"
+                                src="https://i.pinimg.com/564x/f3/13/7f/f3137f027af24022b9e4a0ea3abfbad6.jpg">
+                        </li>
+                        <li>
+                            <img class="img-char-select" id="img-char-select-hutao"
+                                src="https://i.pinimg.com/736x/08/d7/9b/08d79b7b4055ff71c2c7352e91d31d45.jpg">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="conversations" id="conversations">
+                <!-- sau này sẽ tự add thêm converstation (backend) -->
+                <p class="bot-content" id="bot-content"></p>
+            </div>
+
+            <script>
+                let botContentNew = document.getElementsByClassName("bot-content");
+                botContentNew = botContentNew[botContentNew.length -1];
+
+                let count = 0;
+                let response = "Xin chào bạn, Tôi là Yae Miko còn tên của bạn?";
+                function botTyping() {
+                    botContentNew.textContent += response[count];
+                    count++;
+                    if (botContentNew.textContent.length < response.length) {
+                        setTimeout(botTyping, 10);
+                    }
+                    else { return 0; }
+                }
+                botTyping();
+            </script>
+
+            <div class="send-msg" id="send-msg">
+                <!-- button này sẽ đợi onclikc và get value (backend) -->
+                <input class="text-input" id="text-input" type="text">
+                <button class="send-button" id="send-button">Gửi</button>
+            </div>
+
+            <script>
+                document.getElementById("text-input").addEventListener("keypress", function (event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault();
+                        document.getElementById("send-button").click();
+                    }
+                });
+            </script>
+        </div>
+
+    </div>
+
+    <script src="../js/convert-page.js"></script>
+    <script src="../js/mobile-select.js"></script>
+    <script src="../js/api-backend.js"></script>
+</body>
+
+</html>

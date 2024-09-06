@@ -1,0 +1,49 @@
+/* PC screen */
+
+
+
+@keyframes opacity {
+    from {
+        opacity: 0%
+    }
+
+    to {
+        opacity: 100%
+    }
+}
+
+.github-link {
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    animation: opacity 3s;
+    font-size: 100%;
+}
+
+.facebook-link {
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    animation: opacity 3s;
+    font-size: 100%;
+}
+
+.tutorial-link {
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    animation: opacity 3s;
+    font-size: 100%;
+}
+
+.youtube-link {
+    position: relative;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    animation: opacity 3s;
+    font-size: 100%;
+}
